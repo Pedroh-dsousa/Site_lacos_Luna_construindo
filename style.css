@@ -1,0 +1,139 @@
+
+:root {
+    --cor-fundo_1: #400E32;
+    --cor-fundo_2: #F2921D;
+    --cor-fundo_3: #F2CD5C;
+    --cor-fundo_4: #FFFFFF;
+    --cor-bordas: #000000;
+
+    --cor-letras_01: #FFFFFF;
+    --cor-letras_02: #000000;
+
+    --font-principal: 'Delius Swash Caps' 
+}
+
+body {
+    background-color: var(--cor-fundo_2);
+    font-family: var(--font-principal);
+    font-size: 16px;
+}
+    
+.cabecalho__01 {
+    background-color: var(--cor-fundo_1);
+    border-bottom: 2px solid var(--cor-bordas);
+}
+
+.cabecalho__01-icones {
+    font-size: 16px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.cabecalho__01-icones--link {
+    color: var(--cor-fundo_3); 
+    margin: 1.5em 6em 1.5em 0;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+/* final do primeiro cabeçalho*/
+
+.cabecalho__02  {
+    border-bottom: 2px solid var(--cor-bordas);
+}
+
+.cabecalho__02-titulo {
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.cabecalho__02-caixa {
+    display: flex;
+    height: 100%;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0.5em 0;
+    
+}
+
+.cabecalho__02-navegacao {
+   margin-left: 1em;;
+}
+
+.cabecalho__02-navegacao a  {
+    text-decoration: none;
+    color: black;
+    margin: 0 1em 0 1em;
+}
+
+.cabecalho__02-pesquisa {
+    margin-right: 5em;
+}
+
+.cabecalho__02-icone--pesquisa {
+    font-family: var(--font-principal);
+    color: var(--cor-letras_02);
+    font-size: 14px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid 1px black;
+}
+
+::placeholder {
+    text-align: center;
+    color: var(--cor-fundo_1);
+}
+
+/*final do segundo cabecalho (header)*/ 
+
+.meio__imagem-fundo {
+    background-color: var(--cor-fundo_4);
+    border-bottom: 2px solid var(--cor-bordas);
+    background-image: url('img/girassois.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
+
+.meio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+}
+
+.meio__texto {
+    font-size: 5em;
+}
+.meio__botao {
+    color:black;
+    background-color: var(--cor-fundo_2);
+    padding: 1em;
+    text-align: center;
+    border: 2px solid var(--cor-bordas);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.meio__botao:hover {
+    background-color: var(--cor-fundo_3);
+    font-size: 18px;
+    border: 2px solid var(--cor-fundo_2);
+}
+/* final do main */
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.Rodape__lista-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
